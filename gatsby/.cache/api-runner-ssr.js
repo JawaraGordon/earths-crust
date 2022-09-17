@@ -1,4 +1,10 @@
 var plugins = [{
+      plugin: require('/Users/jawaragordon/Development/code/WesBos/Gatsby/master-gatsby/starter-files/gatsby/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('/Users/jawaragordon/Development/code/WesBos/Gatsby/master-gatsby/starter-files/gatsby/node_modules/gatsby-source-sanity/gatsby-ssr'),
+      options: {"plugins":[],"projectId":"zssk3q6x","dataset":"production","watchMode":true,"token":"skMkxqFHoAYntAvmCYxoqXjpV8s30vRIvn80iygqCzLHKSeEl3MI7cj6F6Z2ztdSGwd4U2yj0zOuqFkGSkzHqSlkdShKlqNTWKcUbZEOpWcLi2U1DGWmyex8ipulZlcV9D06LOqpGPHbz53EvDrYkAqOd3EA5TpdR56wMCHDlZZ2hmnyFliu"},
+    },{
       plugin: require('/Users/jawaragordon/Development/code/WesBos/Gatsby/master-gatsby/starter-files/gatsby/gatsby-ssr'),
       options: {"plugins":[]},
     }]

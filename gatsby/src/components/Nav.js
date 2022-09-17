@@ -5,9 +5,8 @@ import Logo from './Logo';
 
 const NavStyles = styled.nav`
   margin-bottom: 3rem;
-  /* background: rgba(76, 175, 80, 0.9); */
-  
-  .logo{
+
+  .logo {
     transform: translateY(-25%);
   }
   ul {
@@ -37,7 +36,7 @@ const NavStyles = styled.nav`
       --rotate: -2.5deg;
     }
     &:hover {
-        --rotate: 3deg;
+      --rotate: 3deg;
     }
   }
   a {
@@ -54,12 +53,6 @@ const NavStyles = styled.nav`
   }
 `;
 
-// function goToSlicemasters() {
-
-//   setTimeout(()=>{console.log('Go to slicemasters')
-//   navigate('/slicemasters'), {replace: true}}, 2000)
-// }
-
 export default function Nav() {
   return (
     <NavStyles>
@@ -73,21 +66,19 @@ export default function Nav() {
         </li>
 
         <li>
-          <Link to="/"> <Logo /> </Link>
+          <Link to="/">
+            {' '}
+            <Logo />{' '}
+          </Link>
         </li>
 
         <li>
-          <Link to="/slicemasters">slicemasters</Link>
+          <Link to="/greenthumbs">Green Thumbs</Link>
         </li>
 
         <li>
           <Link to="/order">Order Up!</Link>
         </li>
-        {/* <li>
-          <button type="button" onClick={goToSlicemasters}>
-            Click me to see slicemasters after two seconds
-          </button>
-        </li> */}
       </ul>
     </NavStyles>
   );

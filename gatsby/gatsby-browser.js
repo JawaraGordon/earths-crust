@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from './src/components/Layout';
 
-export function wrapPageElement({ el, props }) {
-  return <Layout {...props}>{el}🌱</Layout>;
+export function wrapPageElement({ element, props }) {
+  return <Layout {...props}>{element}</Layout>;
 }
