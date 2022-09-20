@@ -1,0 +1,1 @@
+require("/Users/jawaragordon/Development/code/WesBos/Gatsby/master-gatsby/starter-files/gatsby/node_modules/gatsby/dist/utils/telemetry-server.js").default(60025)

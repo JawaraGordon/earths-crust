@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import stripes from '../assets/images/stripes.svg';
+import logobg from '../assets/images/logobg.svg';
+
 
 const LogoStyles = styled.div`
   /* This value controls the entire size of the logo*/
@@ -10,7 +12,8 @@ const LogoStyles = styled.div`
   height: 30em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   margin: 0;
-  --borderSize: 1em;
+  --borderSize: .5em;
+  border-radius: 50%;
   background: white url(${stripes});
   background-size: 150em;
   border: var(--borderSize) solid white;
@@ -18,12 +21,14 @@ const LogoStyles = styled.div`
   .inner {
     margin: var(--borderSize);
     flex: 1;
-    background: white;
+    background: url(${logobg});
     display: grid;
     grid-template-rows: 20% 1fr 1fr;
     align-content: center;
+    border-radius: 50%;
   }
   .est {
+    margin-top: 2rem;
     font-size: 1.5em;
     align-self: center;
   }
@@ -38,6 +43,7 @@ const LogoStyles = styled.div`
   }
 
   .slices {
+    margin-top: -3rem;
     font-size: 3.2em;
     letter-spacing: 0.2em;
     transform: translateY(-0.15em);
@@ -67,7 +73,7 @@ const LogoStyles = styled.div`
     }
     &.a {
       --rotate: 2deg;
-      --scale: 1.4;
+      --scale: 1.0;
       --translateX: 0.05em;
       --translateY: -0.05em;
     }
@@ -80,12 +86,11 @@ const LogoStyles = styled.div`
       --rotate: 3deg;
       --scale: 0.9;
       --translateX: 0.1em;
-      --translateY: 0.23em;
     }
     &.h {
       --rotate: -12deg;
       --scale: 1.2;
-      --translateX: 0.06em;
+      --translateX: 0.07em;
     }
     &.apos {
       --translateX: 0.1em;

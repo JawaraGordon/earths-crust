@@ -7,8 +7,10 @@ export default {
     title: `Earth's Crust`,
     siteUrl: 'https://gatsby.pizza',
     description: `Nature's Best Pizza`,
+    twitter: '@earthscrust'
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-sanity',
