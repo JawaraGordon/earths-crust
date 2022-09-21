@@ -29,7 +29,8 @@ export default function useLatestData() {
     })
       .then((res) => res.json())
       .then((res) => {
-        
+        setFreshPicks(res.data.StoreSettings.freshPicks);
+        setGreenThumbs(res.data.StoreSettings.greenthumbs);
       });
   }, []);
   return {
