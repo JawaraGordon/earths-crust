@@ -36,6 +36,9 @@ const OrderStyles = styled.form`
     fieldset.order {
       grid-column: span 2;
     }
+    .fakeDrop {
+      display: none;
+    }
   }
 `;
 
@@ -79,6 +82,7 @@ export default function OrderPage({ data }) {
   const { values, updateValue } = useForm({
     name: '',
     email: '',
+    fakeDrop: '',
   });
   const {
     order,
@@ -115,6 +119,14 @@ export default function OrderPage({ data }) {
             name="email"
             id="email"
             value={values.email}
+            onChange={updateValue}
+          />
+          <input
+            className="fakeDrop"
+            type="fakeDrop"
+            name="fakeDrop"
+            id="fakeDrop"
+            value={values.fakeDrop}
             onChange={updateValue}
           />
         </fieldset>

@@ -31,6 +31,7 @@ export default function usePizza({ pizzas, inputs }) {
       total: formatMoney(calculateOrderTotal(order, pizzas)),
       name: inputs.name,
       email: inputs.email,
+      fakeDrop: inputs.fakeDrop,
     };
     const res = await fetch(
       `${process.env.GATSBY_SERVERLESS_BASE}/placeOrder`,

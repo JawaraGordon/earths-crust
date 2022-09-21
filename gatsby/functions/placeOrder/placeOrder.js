@@ -43,7 +43,13 @@ const transporter = nodemailer.createTransport({
 
 exports.handler = async (event, context) => {
   const body = JSON.parse(event.body);
-  console.log(body);
+  if (body.fakeDrop) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({ message: `ERROR 28473` }),
+    };
+  }
+
   const requiredFields = ['email', 'name', 'order'];
 
   for (const field of requiredFields) {
@@ -59,14 +65,14 @@ exports.handler = async (event, context) => {
   }
   //validate that order was placed
 
-    if (!body.order.length) {
-      return {
-        statusCode: 400,
-        body: JSON.stringify({
-          message: `Help us save the Earth by adding items to your order`,
-        }),
-      };
-    }
+  if (!body.order.length) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({
+        message: `Help us save the Earth by adding items to your order`,
+      }),
+    };
+  }
 
   const info = await transporter.sendMail({
     from: "Earth's Crust <m.baker@example.com>",
