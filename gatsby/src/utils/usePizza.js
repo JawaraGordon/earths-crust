@@ -25,7 +25,7 @@ export default function usePizza({ pizzas, inputs }) {
     console.log(e);
     setLoading(true);
     setError(null);
-    setMessage('Pizza time!');
+    // setMessage('Pizza time!');
     const body = {
       order: attachNamesAndPrices(order, pizzas),
       total: formatMoney(calculateOrderTotal(order, pizzas)),
@@ -44,7 +44,7 @@ export default function usePizza({ pizzas, inputs }) {
     );
     const text = JSON.parse(await res.text());
 
-    if (res.status >= 400 && re.status < 600) {
+    if (res.status >= 400 && res.status < 600) {
       setLoading(false);
       setError(text.message);
     } else {
