@@ -1,8 +1,23 @@
 import { useState, useEffect } from 'react';
 
+const gql = String.raw;
+
+const info = `
+    name
+    _id
+    image {
+      asset {
+        url
+        metadata {
+          lqip
+        }
+      }
+    }
+`;
+
 export default function useLatestData() {
   const [freshPicks, setFreshPicks] = useState();
-  const [greenThumbs, setGreenThumbs] = useState();
+  const [greenthumbs, setGreenThumbs] = useState();
 
   useEffect(() => {
     fetch(process.env.GATSBY_GRAPHQL_ENDPOINT, {
@@ -11,30 +26,31 @@ export default function useLatestData() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        query: `
-            {
-                StoreSettings 
-                  (id: "hillside"){
-                  name
-                  greenthumbs{
-                    name
-                  }
-                  freshPicks{
-                    name
-                  }
-                }
+        query: gql`
+          query {
+            StoreSettings(id: "hillside") {
+              name
+              greenthumbs {
+                ${info}
               }
-            `,
+              freshPicks {
+                ${info}
+              }
+            }
+          }
+        `,
       }),
     })
       .then((res) => res.json())
       .then((res) => {
         setFreshPicks(res.data.StoreSettings.freshPicks);
         setGreenThumbs(res.data.StoreSettings.greenthumbs);
+        console.log('freshPicks', freshPicks);
+        console.log('greenThumbs', greenthumbs);
       });
   }, []);
   return {
     freshPicks,
-    greenThumbs,
+    greenthumbs,
   };
 }

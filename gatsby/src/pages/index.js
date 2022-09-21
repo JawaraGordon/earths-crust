@@ -1,5 +1,6 @@
 import React from 'react';
 import { HomePageGrid } from '../styles/Grids';
+import ItemGrid from '../styles/ItemGrid';
 import LoadingGrid from '../styles/LoadingGrid';
 import useLatestData from '../utils/useLatestData';
 
@@ -10,17 +11,19 @@ function InTheGarden({ greenthumbs }) {
       {greenthumbs && !greenthumbs?.length && (
         <p>All Green Thumbs are in the garden</p>
       )}
+      {greenthumbs?.length && <ItemGrid items={greenthumbs} />}
     </div>
   );
 }
 
-function FreshPicks(freshPicks) {
+function FreshPicks({ freshPicks }) {
   return (
     <div>
       {!freshPicks && <LoadingGrid count={4} />}
       {freshPicks && !freshPicks?.length && (
         <p>Waiting for more items to grow...</p>
       )}
+      {freshPicks?.length && <ItemGrid items={freshPicks} />}
     </div>
   );
 }
