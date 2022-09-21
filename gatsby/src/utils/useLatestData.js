@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function useLatestData() {
+export default function useLatestData() {
   const [freshPicks, setFreshPicks] = useState();
   const [greenThumbs, setGreenThumbs] = useState();
 
@@ -28,6 +28,12 @@ function useLatestData() {
       }),
     })
       .then((res) => res.json())
-      .then((res) => {});
+      .then((res) => {
+        
+      });
   }, []);
+  return {
+    freshPicks,
+    greenThumbs,
+  };
 }
