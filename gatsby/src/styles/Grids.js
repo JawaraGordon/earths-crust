@@ -23,7 +23,7 @@ export const ItemStyles = styled.div`
     border: 1px solid green;
     height: auto;
     font-size: 0;
-    
+    margin-top: 1rem;
   }
   p {
     top: 0;
