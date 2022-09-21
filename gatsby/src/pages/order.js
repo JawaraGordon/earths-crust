@@ -40,6 +40,15 @@ const OrderStyles = styled.form`
       display: none;
     }
   }
+  @media (max-width: 1920px) {
+    fieldset.menu,
+    fieldset.order {
+      grid-column: span 2;
+    }
+    .fakeDrop {
+      display: none;
+    }
+  }
 `;
 
 const MenuItemStyles = styled.div`

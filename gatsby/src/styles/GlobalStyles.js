@@ -27,7 +27,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   button {
-    background: var(--red);
+    background: var(--green);
     color: white;
     border: 0;
     padding: 0.6rem 1rem;
@@ -53,13 +53,13 @@ const GlobalStyles = createGlobalStyle`
   }
   html {
     scrollbar-width: thin;
-    scrollbar-color: var(--red) var(--white);
+    scrollbar-color: var(--green) var(--white);
   }
   body::-webkit-scrollbar-track {
     background: var(--white);
   }
   body::-webkit-scrollbar-thumb {
-    background-color: var(--red) ;
+    background-color: var(--green) ;
     border-radius: 6px;
     border: 3px solid var(--white);
   }

@@ -22,7 +22,7 @@ export default function usePizza({ pizzas, inputs }) {
 
   async function submitOrder(e) {
     e.preventDefault();
-    console.log(e);
+   
     setLoading(true);
     setError(null);
     // setMessage('Pizza time!');

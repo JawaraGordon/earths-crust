@@ -49,7 +49,30 @@ const NavStyles = styled.nav`
     @media (max-width: 800px) {
       font-size: 2rem;
     }
-    /* &[aria-current='page'] */
+  }
+  @media (max-width: 600px) {
+    --columns: 4;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--green);
+    padding-bottom: 2rem;
+    ul {
+      grid-template-rows: auto auto;
+      grid-template-columns: repeat(var(--columns), 1fr);
+      padding-top: 0;
+    }
+    .logo-item {
+      order: 0;
+      grid-column: 1 / -1;
+      justify-self: center;
+      margin-top: 1rem;
+      
+    }
+    .logo-item {
+      transform: none;
+    }
+    @media (max-width: 500px){
+      --columns: 2;
+    }
   }
 `;
 
@@ -65,7 +88,7 @@ export default function Nav() {
           <Link to="/pizzas">Pizza Menu</Link>
         </li>
 
-        <li>
+        <li className="logo-item">
           <Link to="/">
             {' '}
             <Logo />{' '}

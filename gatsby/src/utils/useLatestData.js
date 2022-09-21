@@ -45,8 +45,6 @@ export default function useLatestData() {
       .then((res) => {
         setFreshPicks(res.data.StoreSettings.freshPicks);
         setGreenThumbs(res.data.StoreSettings.greenthumbs);
-        console.log('freshPicks', freshPicks);
-        console.log('greenThumbs', greenthumbs);
       });
   }, []);
   return {

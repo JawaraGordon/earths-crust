@@ -24,7 +24,7 @@ const SingleDrinkStyles = styled.div`
 `;
 
 export default function DrinksPage({ data }) {
-  console.log(data.allDrink.nodes[0]._1);
+ 
   return (
     <>
       <SEO
