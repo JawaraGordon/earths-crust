@@ -1,7 +1,7 @@
 {
-  "name": "earths-crust-frontend",
+  "name": "slicks-slices-frontend",
   "private": true,
-  "description": "Earth's Crust - The Best Pizza On The Planet",
+  "description": "Slick Serves the Sweetest Slices",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
