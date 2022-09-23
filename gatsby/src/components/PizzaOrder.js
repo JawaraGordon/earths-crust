@@ -42,7 +42,7 @@ const MenuItemStyles = styled.div`
 export default function PizzaOrder({ order, pizzas, removeFromOrder }) {
   return (
     <>
-      <p>You have {order.length} items in your order.</p>
+      <p>You have {order.length} item(s) in your order.</p>
       {order.map((singleOrder, index) => {
         const pizza = pizzas.find((pizza) => pizza.id === singleOrder.id);
         return (
