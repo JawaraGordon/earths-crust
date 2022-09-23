@@ -96,10 +96,6 @@ https://earths-crust.netlify.app/
 
 - 2.33.2
 
-### Rails version
-
-- 7.0.3.1
-
 ### NPM version
 
 - 8.15.0
@@ -110,7 +106,7 @@ https://earths-crust.netlify.app/
 
 ### Database
 
-- GraphQL 14.4
+- GraphQL 6.2.1
 
 ## System dependencies
 
