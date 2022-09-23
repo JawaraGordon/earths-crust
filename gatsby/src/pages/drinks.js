@@ -29,11 +29,15 @@ export default function DrinksPage({ data }) {
     <>
       <SEO
         title={`Kombucha - We have ${data.allDrink.nodes[0]._1.length} in stick`}
-        image={pizza.image?.asset?.fluid?.src}
       />
-      <h2 className="center">
+      <div className="center">
+      <h2 className="mark" title="kombucha drinks">
         We have {data.allDrink.nodes[0]._1.length} types of Kombucha available.
       </h2>
+      </div>
+      <br></br>
+      <h3 className="center">(Dine-in only)</h3>
+      <br></br>
       <DrinkGridStyles>
         {data.allDrink.nodes[0]._1.map((drink) => {
           const rating = Math.round(drink.rating.average);

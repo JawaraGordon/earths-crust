@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import React from 'react';
 import SEO from '../components/SEO';
 import useForm from '../utils/useForm';
@@ -9,6 +9,7 @@ import styled from 'styled-components';
 import usePizza from '../utils/usePizza';
 import PizzaOrder from '../components/PizzaOrder';
 import calculateOrderTotal from '../utils/calculateOrderTotal';
+import { NavStyles } from '../components/Nav';
 
 const OrderStyles = styled.form`
   display: grid;
@@ -171,6 +172,14 @@ export default function OrderPage({ data }) {
             </MenuItemStyles>
           ))}
         </fieldset>
+        <br></br>
+        <fieldset className="center" disabled={loading}>
+          <legend className="mark"><h2>Check out our Drinks</h2></legend>
+          <NavStyles>
+          <Link className="center" to="/drinks">Kombucha</Link>
+        </NavStyles>
+        </fieldset>
+        <br></br>
         <fieldset className="order" disabled={loading}>
           <legend>Order</legend>
           <PizzaOrder

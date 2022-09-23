@@ -3,7 +3,7 @@ import { Link, navigate } from 'gatsby';
 import styled from 'styled-components';
 import Logo from './Logo';
 
-const NavStyles = styled.nav`
+export const NavStyles = styled.nav`
   margin-top: 1rem;
 
   .logo {
