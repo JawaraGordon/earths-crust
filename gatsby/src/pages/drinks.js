@@ -24,16 +24,16 @@ const SingleDrinkStyles = styled.div`
 `;
 
 export default function DrinksPage({ data }) {
- 
   return (
     <>
       <SEO
         title={`Kombucha - We have ${data.allDrink.nodes[0]._1.length} in stick`}
       />
       <div className="center">
-      <h2 className="mark" title="kombucha drinks">
-        We have {data.allDrink.nodes[0]._1.length} types of Kombucha available.
-      </h2>
+        <h2 className="mark" title="kombucha drinks">
+          We have {data.allDrink.nodes[0]._1.length} kinds of Kombucha
+          available.
+        </h2>
       </div>
       <br></br>
       <h3 className="center">(Dine-in only)</h3>
