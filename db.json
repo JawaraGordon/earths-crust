@@ -1,0 +1,54 @@
+{
+    "kombucha": [
+        {
+            "id": 0,
+            "price": 10,
+            "name": "Health-Ade Kombucha",
+            "rating": {
+                "average": 4.5,
+                "reviews": 322
+            },
+            "img": "https://jawaragordon.com/earthscrust/img/healthaid.png"
+        },
+        {
+            "id": 1,
+            "price": 8,
+            "name": "Humm Probiotic Kombucha",
+            "rating": {
+                "average": 3.8,
+                "reviews": 410
+            },
+            "img": "https://jawaragordon.com/earthscrust/img/humm.png"
+        },
+        {
+            "id": 2,
+            "price": 9,
+            "name": "Remedy Kombucha",
+            "rating": {
+                "average": 2.5,
+                "reviews": 133
+            },
+            "img": "https://jawaragordon.com/earthscrust/img/remedy.png"
+        },
+        {
+            "id": 3,
+            "price": 7.5,
+            "name": "Better Booch",
+            "rating": {
+                "average": 5,
+                "reviews": 499
+            },
+            "img": "https://jawaragordon.com/earthscrust/img/betterbooch.png"
+        },
+        {
+            "id": 4,
+            "price": 9,
+            "name": "Brew Dr. Kombucha",
+            "rating": {
+                "average": 4,
+                "reviews": 234
+            },
+            "img": "https://jawaragordon.com/earthscrust/img/brewdr.png"
+        }
+    ]
+}
