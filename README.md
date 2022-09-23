@@ -2,16 +2,16 @@
 
 # Earth's Crust
 
-A Plant-Based Pizzeria 
+A Plant-Based Pizzeria
 
-Serving the best pizza on the planet! 
-Open 24/7 364 - (closed on Earth Day) 
+Serving the best pizza on the planet!
+Open 24/7 364 - (closed on Earth Day)
 
 ## Description
 
 A web application that uses a React & Gatsby front-end, a Sanity & GraphQL back-end and a custom designed API.
 
-Deployed on Netlify with Sanity Studio. 
+Deployed on Netlify with Sanity Studio.
 https://earths-crust.netlify.app/
 
 ### Project Repo
@@ -32,15 +32,15 @@ https://earths-crust.netlify.app/
 
 🌱 View all of the 'Green Thumbs" by pressing the 'Next' and 'Prev' buttons, or by choosing a page number.
 
-🌱 Make an order by pressing "Order Up!" in the navbar. 
+🌱 Make an order by pressing "Order Up!" in the navbar.
 
-🌱 Fill out the order form, then choose your pizzas from the list by size and price. 
+🌱 Fill out the order form, then choose your pizzas from the list by size and price.
 
-🌱 See a list of drinks by pressing "Kombucha" at the bottom of the order page. This will take you to a "Drinks page" that displays a list of drinks from a custom API end point. 
+🌱 See a list of drinks by pressing "Kombucha" at the bottom of the order page. This will take you to a "Drinks page" that displays a list of drinks from a custom API end point.
 
 🌱 You can return to the order page at any time to see your saved order with the quantity of items and dynamically generated total.
 
-🌱 Complete your order by pressing the "Order Up!" button at the bottom of the page. 
+🌱 Complete your order by pressing the "Order Up!" button at the bottom of the page.
 
 ## Setup
 
@@ -114,13 +114,14 @@ https://earths-crust.netlify.app/
 
 ## System dependencies
 
-* macOS 10+
+- macOS 10+
 
-* Windows 10+
+- Windows 10+
 
 ### Project dependencies
 
 ### Gatsby
+
 ```
     "babel-plugin-styled-components": "^1.11.1",
     "dotenv": "^8.2.0",
@@ -140,6 +141,7 @@ https://earths-crust.netlify.app/
 ```
 
 ### Sanity
+
 ```
   "plugins": [
     "@sanity/base",
@@ -152,10 +154,9 @@ https://earths-crust.netlify.app/
 
 ## Deploy with Netlify
 
-Windows Instructions [here] https://docs.netlify.com/welcome/add-new-site/
-
+Instructions [here] https://docs.netlify.com/welcome/add-new-site/
 
 ## License
 
-Build your own version of this project from Wes Bos: 
+Build your own version of this project from Wes Bos:
 [MasterGatsby.com](https://mastergatsby.com).
